@@ -1,0 +1,124 @@
+.archive-page {
+  padding: 2rem 0;
+  min-height: calc(100vh - 140px);
+}
+
+.archive-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.archive-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #1890ff;
+}
+
+.archive-subtitle {
+  margin: 2rem 0 1rem;
+}
+
+/* 统计卡片 */
+.archive-stats {
+  margin-bottom: 2rem;
+}
+
+/* 图表卡片 */
+.chart-card {
+  margin-bottom: 2rem;
+}
+
+/* 归档内容 */
+.archive-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* 年份卡片 */
+.year-card {
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 月份分组 */
+.month-group {
+  margin-bottom: 1.5rem;
+}
+
+.month-title {
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  border-left: 4px solid #1890ff;
+  padding-left: 1rem;
+}
+
+/* 时间线样式 */
+.timeline-content {
+  padding: 0.5rem 0;
+}
+
+.timeline-content .post-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.timeline-content .post-title:hover {
+  color: #1890ff;
+}
+
+.timeline-content .post-meta {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.3rem;
+}
+
+/* 归档摘要 */
+.archive-summary {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .archive-container {
+    padding: 0 0.5rem;
+  }
+  
+  .archive-title {
+    font-size: 1.8rem;
+  }
+  
+  .timeline-content .post-title {
+    font-size: 1rem;
+  }
+  
+  .month-title {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .archive-page {
+    padding: 1rem 0;
+  }
+  
+  .archive-stats .ant-card {
+    margin-bottom: 1rem;
+  }
+  
+  .chart-card {
+    margin-bottom: 1rem;
+  }
+  
+  .year-card {
+    margin-bottom: 1rem;
+  }
+}
