@@ -233,18 +233,6 @@ const deletePost = (id) => {
   return null;
 };
 
-// 根据作者ID获取作者名称
-const getAuthorNameById = (authorId) => {
-  const authors = [
-    { name: "张三", id: 1 },
-    { name: "李四", id: 2 },
-    { name: "王五", id: 3 },
-    { name: "赵六", id: 4 },
-    { name: "孙七", id: 5 }
-  ];
-  const author = authors.find(a => a.id === authorId);
-  return author ? author.name : "未知作者";
-};
 
 // 根据作者ID获取文章
 export const getPostsByAuthorId = (authorId) => {
@@ -255,7 +243,7 @@ export const getPostsByAuthorId = (authorId) => {
 const getAllTags = () => {
   const tagsSet = new Set();
   posts.forEach(post => {
-    post.tags.forEach(tag => tagsSet.add(tag));
+    post.标签.forEach(tag => tagsSet.add(tag));
   });
   return Array.from(tagsSet);
 };
