@@ -1,10 +1,7 @@
 {
-  name = "garmeanblog"
-  type = "javascript"
-  account_id = "..." 
-  workers_dev = true
-
-  [site]
-  bucket = "./build"
-  entry-point = "workers"
+  "name": "garmeanblog",
+  "compatibility_date": "2025-12-31",
+  "assets": {
+    "directory": "./build"
+  }
 }
