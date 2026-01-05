@@ -1,5 +1,6 @@
 {
-  "name": "my-blog",
+  // wrangler.jsonc
+  "name": "garmeanblog",
   "compatibility_date": "2025-12-31",
   "assets": {
     "directory": "./build"
